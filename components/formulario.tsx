@@ -21,7 +21,7 @@ export default function Formulario() {
       </label>
       <input
         id="username"
-        name="username"
+        name="UserName"
         type="text"
         value={username}
         onChange={(event) => setUsername(event.target.value)}
@@ -36,7 +36,7 @@ export default function Formulario() {
       >Lastname:</label>
       <input
         id="lastname"
-        name="lastname"
+        name="FullName"
         type="text"
         value={lastname}
         onChange={(event) => setLastname(event.target.value)}
@@ -66,9 +66,9 @@ export default function Formulario() {
     </form>
 
     <div>
-      <p>Nombre: {submitted.username.toUpperCase()}</p>
-      <p>Apellido: {submitted.lastname.toUpperCase()}</p>
-      <p>Edad: {submitted.age}</p>
+      <p>UserName: {submitted.username.toUpperCase()}</p>
+      <p>FullName: {submitted.lastname.toUpperCase()}</p>
+      <p>Age: {submitted.age}</p>
     </div>
 
 
